@@ -21,7 +21,7 @@ script: "./gradlew clean build"
 before_deploy:
   - zip -r book-springboot-webservice *
   - mkdir -p deploy
-  - mv book-springboot-webservice.zip deply/book-springboot-webservice.zip
+  - mv book-springboot-webservice.zip deploy/book-springboot-webservice.zip
 
 deploy:
   - provider: s3
